@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+   <link rel="manifest" href="site.webmanifest">
+   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#05373c">
+   <meta name="msapplication-config" content="browserconfig.xml">
+   <link rel="stylesheet" href="css/style.min.css">
+   <script defer src="js/main.min.js"></script>
+   <title>Lizard Affilates</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="popup ">
+         <div class="popup__body calc" tabindex="-1">
+            <h2 class="popup__title calc__title">I WANT TO EARN MONTHLY</h2>
+            <div class="calc__form">
+               <span class="calc__form-currency-sign">€</span>
+               <input type="text" class="calc__form-input">
+               <div class="calc__selector">
+                  <div class="calc__option calc__option--trigger active">EUR</div>
+                  <div class="calc__option calc__option--hidden active">BTC</div>
+                  <div class="calc__option calc__option--trigger">BTC</div>
+                  <div class="calc__option calc__option--hidden">EUR</div>
+               </div>
+            </div>
+            <div class="calc__info">
+               <div class="calc__required">
+                  <div class="calc__tooltip">
+                     Casino Profit Required
+                     <span>
+                        <span class="calc__tooltip-info">Casino Profit = (bets - wins - bonuses) - admin fee.</span>
+                     </span>
+                  </div>
+                  <div class="calc__result">25000 €</div>
+               </div>
+               <div class="calc__required">
+                  <div class="calc__tooltip">
+                     Commission Plan
+                     <span>
+                        <span class="calc__tooltip-info">
+                           <span>25% -&lt; 600€</span>
+                           <span>30% -600-1600€</span>
+                           <span>35% -1600-3000€</span>
+                           <span>40% -3000-5000€</span>
+                           <span>45% -5000-8000€</span>
+                           <span>50% -8000+€</span>
+                        </span>
+                     </span>
+                  </div>
+                  <div class="calc__result">25%</div>
+               </div>
+            </div>
+            <div class="calc__bottom">
+               <p class="calc__bottom-text">Registration takes just one minute!</p>
+               <button class="popup__button calc__button _registration">Start earning €10,000 monthly</button>
+               <ul class="calc__icons">
+                  <li class="calc__icon">
+                     <picture>
+                        <source srcset="img/content/popup-btc-logo.svg" type="image/svg+xml">
+                        <img src="img/content/popup-btc-logo.png" alt="Btc logo" width="61" height="13">
+                     </picture>
+                  </li>
+                  <li class="calc__icon">
+                     <picture>
+                        <source srcset="img/content/popup-skrill.svg" type="image/svg+xml">
+                        <img src="img/content/popup-skrill.png" alt="Skrill logo" width="62" height="20">
+                     </picture>
+                  </li>
+                  <li class="calc__icon">
+                     <picture>
+                        <source srcset="img/content/popup-neteller.svg" type="image/svg+xml">
+                        <img src="img/content/popup-neteller.png" alt="Neteller logo" width="61" height="11">
+                     </picture>
+                  </li>
+                  <li class="calc__icon">
+                     <picture>
+                        <source srcset="img/content/popup-bank.svg" type="image/svg+xml">
+                        <img src="img/content/popup-bank.png" alt="Bank logo" width="61" height="21">
+                     </picture>
+                  </li>
+               </ul>
+            </div>
+            <button class="popup__close"></button>
+         </div>
+         <div class="popup__body auth" tabindex="-1">
+
+            <div class="auth__tabs">
+               <h2 class="popup__title auth__tab _login-tab" role="button" tabindex="0">LOGIN</h2>
+               <h2 class="popup__title auth__tab _registration-tab" role="button" tabindex="0">REGISTRATION</h2>
+            </div>
+            <form class="auth__form login">
+
+               <h2 class="popup__title auth__title">LOGIN</h2>
+
+               <div class="auth__input-wrapper required">
+                  <input type="email" class="auth__input  auth__input--email" placeholder="E-MAIL" required>
+               </div>
+               <div class="auth__input-wrapper required">
+                  <input type="password" class="auth__input auth__input--password" placeholder="PASSWORD" required>
+                  <span class="auth__input-eye"></span>
+               </div>
+               <div class="auth__input-wrapper required">
+                  <input type="text" class="auth__input auth__input--auth-code" placeholder="AUTH-CODE" required>
+               </div>
+               <button type="submit" class="popup__button auth__button login__button">submit</button>
+               <div class="login__reset">Reset your password or register</div>
+            </form>
+            <form class="auth__form registration">
+
+               <h2 class="popup__title auth__title">REGISTRATION</h2>
+
+               <div class="auth__input-wrapper required">
+                  <input type="email" class="auth__input  auth__input--email" placeholder="E-MAIL" required>
+               </div>
+               <div class="auth__input-wrapper required">
+                  <input type="password" class="auth__input auth__input--password" placeholder="PASSWORD" required>
+                  <span class="auth__input-eye"></span>
+               </div>
+               <div class="auth__input-wrapper required">
+                  <input type="password" class="auth__input auth__input--password" placeholder="PASSWORD CONFIRMATION"
+                     required>
+                  <span class="auth__input-eye"></span>
+               </div>
+               <div class="auth__input-wrapper required">
+                  <input type="text" class="auth__input auth__input--name" placeholder="FULL NAME" required>
+               </div>
+               <div class="auth__input-wrapper required">
+                  <input type="text" class="auth__input auth__input--traffic" placeholder="TRAFFIC SOURCES" required>
+               </div>
+               <div class="auth__input-wrapper">
+                  <input type="text" class="auth__input auth__input--company" placeholder="COMPANY">
+               </div>
+               <div class="auth__input-wrapper">
+                  <input type="text" class="auth__input auth__input--tel" placeholder="PHONE">
+               </div>
+               <div class="auth__input-wrapper">
+                  <input type="text" class="auth__input auth__input--skype" placeholder="SKYPE">
+               </div>
+               <div class="auth__input-wrapper">
+                  <input type="text" class="auth__input auth__input--telegram" placeholder="TELEGRAM">
+               </div>
+               <div class="registration__checkboxes">
+                  <div class="registration__checkboxes-item required">
+                     <input class="registration__checkbox-input" type="checkbox" id="accept" required>
+                     <label class="registration__checkbox" for="accept" tabindex="0"></label>
+                     <p class="registration__checkboxes-item-text">
+                        I accept site affiliate<br>
+                        <a href="#">Terms & Conditions</a>
+                     </p>
+                  </div>
+                  <div class="registration__checkboxes-item">
+                     <input class="registration__checkbox-input" type="checkbox" id="subscribe" checked>
+                     <label class="registration__checkbox" for="subscribe" tabindex="0"></label>
+                     <p class="registration__checkboxes-item-text">
+                        Subscribe to our newsletter
+                     </p>
+                  </div>
+               </div>
+               <button type="submit" class="popup__button auth__button registration__button">submit</button>
+            </form>
+            <button class="popup__close"></button>
+         </div>
+      </div>
+      <header class="header">
+         <div class="container">
+            <div class="header__body">
+               <a class="logo header__logo" href="index.html" title="На главную">
+                  <picture>
+                     <source srcset="img/content/logo-mobile.png" type="image/png" media="(max-width:768px)" width="143"
+                        height="35">
+                     <img src="img/content/logo.png" alt="logo" width="238" height="95">
+                  </picture>
+               </a>
+               <nav class="header__menu">
+                  <button class="burger" aria-label="Burger button.">
+                     <span></span>
+                  </button>
+                  <ul class="header__menu-list">
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="index.html#plan">Comissions</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="index.html#politics">About us</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="index.html#brands">Affiliate kit</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="index.html#contact">Contacts</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <button class="button header__login header__login--adaptive _login">LOGIN</button>
+                     </li>
+                     <li class="header__menu-item">
+                        <button class="button header__registration header__registration--adaptive _registration">GET
+                           STARTED</button>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="header__language-wrapper">
+                  <select class="header__language">
+                     <option value="en">EN</option>
+                     <option value="ru">RU</option>
+                  </select>
+               </div>
+               <button class="button header__login _login">LOGIN</button>
+               <button class="button header__registration _registration">GET STARTED</button>
+            </div>
+         </div>
+      </header>
+      <main class="content">
+         <section class="promo">
+            <div class="container">
+               <div class="promo__body">
+                  <div class="promo__title">Lizard affiliates <span>program</span>
+                  </div>
+                  <div class="promo__subtitle">Make money by referring people to Lizard Affiliates</div>
+                  <div class="promo__calculator">
+                     <ul class="promo__calculator-list">
+                        <li class="promo__list-item">
+                           <a class="promo__list-link" href="#" title="Bitcoin">
+                              <picture>
+                                 <source srcset="img/content/Btc-logo.svg" type="image/svg+xml">
+                                 <img src="img/content/Btc-logo.png" alt="Btc logo" width="55" height="12">
+                              </picture>
+                           </a>
+                        </li>
+                        <li class="promo__list-item">
+                           <a class="promo__list-link" href="#" title="Skrill">
+                              <picture>
+                                 <source srcset="img/content/Skrill.svg" type="image/svg+xml">
+                                 <img src="img/content/Skrill.png" alt="Skrill logo" width="55" height="20">
+                              </picture>
+                           </a>
+                        </li>
+                        <li class="promo__list-item">
+                           <a class="promo__list-link" href="#" title="Neteller">
+                              <picture>
+                                 <source srcset="img/content/Neteller.svg" type="image/svg+xml">
+                                 <img src="img/content/Neteller.png" alt="Neteller logo" width="55" height="10">
+                              </picture>
+                           </a>
+                        </li>
+                        <li class="promo__list-item">
+                           <a class="promo__list-link" href="#" title="Bank transfer">
+                              <picture>
+                                 <source srcset="img/content/bank-transfer.svg" type="image/svg+xml">
+                                 <img src="img/content/bank-transfer.png" alt="Bank transfer logo" width="55"
+                                    height="20">
+                              </picture>
+                           </a>
+                        </li>
+                     </ul>
+                     <button class="button promo__calculator-button _calculator">profit calculator</button>
+                  </div>
+                  <div class="promo__image">
+                     <img src="img/content/igu-mascot.png" alt="igu mascot" width="494" height="495">
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="politics" id="politics">
+            <div class="container">
+               <div class="politics__body">
+                  <h2 class="title politics__title">Our politics</h2>
+                  <div class="politics__items">
+                     <div class="politics__item">
+                        <div class="politics__item-image">
+                           <picture>
+                              <source srcset="img/content/interface.svg" type="image/svg+xml">
+                              <img src="img/content/interface.png" alt="interface icon" width="70" height="70">
+                           </picture>
+                        </div>
+                        <div class="politics__item-text">
+                           <h3 class="item-title politics__item-title">Clean and intuitive interface</h3>
+                           <p class="item-discription politics__item-discription">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime rerum quibusdam
+                              laboriosam enim numquam ab, doloremque minus? Reiciendis nostrum placeat, at temporibus
+                              beatae tempora, impedit, mollitia fugiat aut deserunt quo eaque excepturi repellat!
+                              Nostrum enim doloremque neque perferendis tempore non! Illo, nam.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="politics__item">
+                        <div class="politics__item-image">
+                           <picture>
+                              <source srcset="img/content/commission.svg" type="image/svg+xml">
+                              <img src="img/content/commission.png" alt="shield icon" width="70" height="70">
+                           </picture>
+                        </div>
+                        <div class="politics__item-text">
+                           <h3 class="item-title politics__item-title">Convenient withdrawal of commissions</h3>
+                           <p class="item-discription politics__item-discription">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae id explicabo
+                              necessitatibus molestias temporibus. Perferendis eveniet consectetur quis laborum cum
+                              asperiores provident soluta maxime laboriosam, esse delectus reiciendis ea.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="politics__item">
+                        <div class="politics__item-image">
+                           <picture>
+                              <source srcset="img/content/shield.svg" type="image/svg+xml">
+                              <img src="img/content/shield.png" alt="shield icon" width="70" height="70">
+                           </picture>
+                        </div>
+                        <div class="politics__item-text">
+                           <h3 class="item-title politics__item-title">Honest business without cheating</h3>
+                           <p class="item-discription politics__item-discription">
+                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore molestiae quo esse rerum
+                              facilis et nisi. Voluptatibus libero, velit provident in consectetur, ratione obcaecati
+                              repellat sunt ut mollitia, similique odit fugit totam earum quasi optio? Eius sequi harum
+                              ratione reprehenderit tempora autem laboriosam!
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="offer">
+            <div class="container">
+               <div class="offer__body">
+                  <div class="offer__special">
+                     <h2 class="title offer__title">Special offer</h2>
+                     <div class="offer__special-content">
+                        <div class="offer__special-image">
+                           <img src="img/content/special-offer-poker.jpg" alt="poker" width="465" height="225">
+                        </div>
+                        <div class="offer__special-info">
+                           <h3 class="item-title offer__special-title">Special offer long or short title here</h3>
+                           <div class="offer__special-calendar">02.28.2022 till 03.30.2022</div>
+                           <p class="item-discription offer__special-discription">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid aperiam minima
+                              dolorem delectus nisi consequuntur, eaque rerum eum nobis quidem vero! Architecto,
+                              incidunt ea.
+                           </p>
+                           <button class="button offer__special-button _registration">participate</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="offer__top">
+                     <h2 class="title offer__title">TOP10 gainers</h2>
+                     <ul class="offer__top-list">
+                        <li class="offer__top-list-item">
+                           <div class="offer__top-list-user">longusernickname</div>
+                           <div class="offer__top-list-score">+15k gamers</div>
+                        </li>
+                        <li class="offer__top-list-item">
+                           <div class="offer__top-list-user">longusernickname</div>
+                           <div class="offer__top-list-score">+15k gamers</div>
+                        </li>
+                        <li class="offer__top-list-item">
+                           <div class="offer__top-list-user">longusernickname</div>
+                           <div class="offer__top-list-score">+15k gamers</div>
+                        </li>
+                        <li class="offer__top-list-item">
+                           <div class="offer__top-list-user">longusernickname</div>
+                           <div class="offer__top-list-score">+15k gamers</div>
+                        </li>
+                        <li class="offer__top-list-item">
+                           <div class="offer__top-list-user">longusernickname</div>
+                           <div class="offer__top-list-score">+15k gamers</div>
+                        </li>
+                        <li class="offer__top-list-item">
+                           <div class="offer__top-list-user">longusernickname</div>
+                           <div class="offer__top-list-score">+15k gamers</div>
+                        </li>
+                        <li class="offer__top-list-item">
+                           <div class="offer__top-list-user">longusernickname</div>
+                           <div class="offer__top-list-score">+15k gamers</div>
+                        </li>
+                        <li class="offer__top-list-item">
+                           <div class="offer__top-list-user">longusernickname</div>
+                           <div class="offer__top-list-score">+15k gamers</div>
+                        </li>
+                        <li class="offer__top-list-item">
+                           <div class="offer__top-list-user">longusernickname</div>
+                           <div class="offer__top-list-score">+15k gamers</div>
+                        </li>
+                        <li class="offer__top-list-item">
+                           <div class="offer__top-list-user">longusernickname</div>
+                           <div class="offer__top-list-score">+15k gamers</div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="plan" id="plan">
+            <div class="container">
+               <div class="plan__body">
+                  <div class="plan__background active" id="background-cur1">
+                     <picture>
+                        <source srcset="img/background/plan.svg" type="image/svg+xml">
+                        <img src="img/background/plan.png" alt="plan" width="2005" height="438">
+                     </picture>
+                     <div class="plan__graph">
+                        <div class="plan__graph-background"></div>
+                        <div class="plan__graph-percent">25%</div>
+                        <div class="plan__graph-comission">&lt; €5,000</div>
+                     </div>
+                     <div class="plan__graph">
+                        <div class="plan__graph-background"></div>
+                        <div class="plan__graph-percent">30%</div>
+                        <div class="plan__graph-comission">&lt; €5,000 to €10,000</div>
+                     </div>
+                     <div class="plan__graph">
+                        <div class="plan__graph-background"></div>
+                        <div class="plan__graph-percent">35%</div>
+                        <div class="plan__graph-comission">&lt; €5,000 to €10,000</div>
+                     </div>
+                     <div class="plan__graph">
+                        <div class="plan__graph-background"></div>
+                        <div class="plan__graph-percent">40%</div>
+                        <div class="plan__graph-comission">&lt; €20,000 +</div>
+                     </div>
+                  </div>
+                  <div class="plan__background" id="background-cur2">
+                     <picture>
+                        <source srcset="img/background/plan.svg" type="image/svg+xml">
+                        <img src="img/background/plan.png" alt="plan" width="2005" height="438">
+                     </picture>
+                     <div class="plan__graph">
+                        <div class="plan__graph-background"></div>
+                        <div class="plan__graph-percent">30%</div>
+                        <div class="plan__graph-comission">&lt; €5,000</div>
+                     </div>
+                     <div class="plan__graph">
+                        <div class="plan__graph-background"></div>
+                        <div class="plan__graph-percent">35%</div>
+                        <div class="plan__graph-comission">&lt; €5,000 to €10,000</div>
+                     </div>
+                     <div class="plan__graph">
+                        <div class="plan__graph-background"></div>
+                        <div class="plan__graph-percent">40%</div>
+                        <div class="plan__graph-comission">&lt; €5,000 to €10,000</div>
+                     </div>
+                     <div class="plan__graph">
+                        <div class="plan__graph-background"></div>
+                        <div class="plan__graph-percent">45%</div>
+                        <div class="plan__graph-comission">&lt; €20,000 +</div>
+                     </div>
+                  </div>
+                  <div class="plan__background" id="background-cur3">
+                     <picture>
+                        <source srcset="img/background/plan.svg" type="image/svg+xml">
+                        <img src="img/background/plan.png" alt="plan" width="2005" height="438">
+                     </picture>
+                     <div class="plan__graph">
+                        <div class="plan__graph-background"></div>
+                        <div class="plan__graph-percent">20%</div>
+                        <div class="plan__graph-comission">&lt; €5,000</div>
+                     </div>
+                     <div class="plan__graph">
+                        <div class="plan__graph-background"></div>
+                        <div class="plan__graph-percent">25%</div>
+                        <div class="plan__graph-comission">&lt; €5,000 to €10,000</div>
+                     </div>
+                     <div class="plan__graph">
+                        <div class="plan__graph-background"></div>
+                        <div class="plan__graph-percent">30%</div>
+                        <div class="plan__graph-comission">&lt; €5,000 to €10,000</div>
+                     </div>
+                     <div class="plan__graph">
+                        <div class="plan__graph-background"></div>
+                        <div class="plan__graph-percent">35%</div>
+                        <div class="plan__graph-comission">&lt; €20,000 +</div>
+                     </div>
+                  </div>
+                  <div class="plan__top">
+                     <div class="plan__top-text">
+                        <h2 class="title plan__title">Commission plan</h2>
+                        <h3 class="subtitle plan__subtitle">Based on casino profit your players generate per month
+                        </h3>
+                     </div>
+                     <div class="plan__switcher">
+                        <button class="button plan__switcher-button active" id="cur1">EUR</button>
+                        <button class="button plan__switcher-button" id="cur2">BTC</button>
+                        <button class="button plan__switcher-button" id="cur3">FDT</button>
+                        <div class="plan__switcher-decoration"></div>
+                     </div>
+                  </div>
+                  <div class="plan__buttons">
+                     <a class="plan__terms" href="#">Affiliate Terms & Conditions</a>
+                     <button class="button plan__calculator _calculator">profit calculator</button>
+                     <button class="button plan__registration _registration">Get started</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="brands" id="brands">
+            <div class="brands__top">
+               <div class="container">
+                  <div class="brands__top-body">
+                     <h2 class="title brands__top-title">Our brands</h2>
+                     <div class="brands__top-brand">
+                        <img src="img/content/brand1.svg" alt="brand1" width="105" height="40">
+                     </div>
+                     <div class="brands__top-brand">
+                        <img src="img/content/brand2.svg" alt="brand2" width="100" height="51">
+                     </div>
+                     <div class="brands__top-brand">
+                        <img src="img/content/brand3.svg" alt="brand3" width="119" height="30">
+                     </div>
+                     <div class="brands__top-brand">
+                        <img src="img/content/brand4.svg" alt="brand4" width="104" height="74">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="brands__content">
+               <div class="container">
+                  <div class="brands__content-body">
+                     <div class="brands__content-brand">
+                        <div class="brands__content-logo">
+                           <picture>
+                              <source media="(max-width: 768px)" srcset="img/content/brand1.svg" width="183"
+                                 height="53">
+                              <img src="img/content/brand1.svg" alt="brand1" width="221" height="64">
+                           </picture>
+                        </div>
+                        <a class="link brands__link brands__link--mobile" href="#">placeholderlink.com</a>
+                        <p class="brands__content-discription">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, similique suscipit, facere
+                           porro ea atque aut animi labore ex debitis voluptatem voluptate dolore voluptatibus
+                           repudiandae at reiciendis quibusdam facilis accusamus, vitae fugit alias!
+                        </p>
+                     </div>
+                     <div class="brands__image">
+                        <img src="img/content/mockup-1.png" alt="mockup" width="1014" height="604">
+                     </div>
+                     <div class="brands__spoiler">
+                        <div class="brands__markets">
+                           <h3 class="subtitle brands__markets-subtitle">Markets:</h3>
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--greece">Greece</div>
+                           <div class="brands__markets-country brands__markets-country--greece">Greece</div>
+                           <div class="brands__markets-country brands__markets-country--greece">Greece</div>
+                           <button class="brands__markets-show brands__markets-show--more">Show more</button>
+                        </div>
+                        <div class="brands__markets _spoilerContent _hidden">
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--greece">Greece</div>
+                           <div class="brands__markets-country brands__markets-country--greece">Greece</div>
+                           <div class="brands__markets-country brands__markets-country--greece">Greece</div>
+                           <button class="brands__markets-show brands__markets-show--less">Show less</button>
+                        </div>
+                     </div>
+                     <div class="brands__info">
+                        <div class="brands__info-item">
+                           <h3 class="subtitle brands__info-subtitle">Commission:</h3>
+                           <div class="brands__info-text">Revshare up to 45%</div>
+                        </div>
+                        <div class="brands__info-item">
+                           <h3 class="subtitle brands__info-subtitle">License:</h3>
+                           <div class="brands__info-text">Malta (MGA)</div>
+                        </div>
+                        <div class="brands__info-item">
+                           <h3 class="subtitle brands__info-subtitle">est. date:</h3>
+                           <div class="brands__info-text">2022</div>
+                        </div>
+                        <div class="brands__info-item">
+                           <h3 class="subtitle brands__info-subtitle">languages:</h3>
+                           <div class="brands__info-text">EN, ESP, GE, RU</div>
+                        </div>
+                        <div class="brands__info-item">
+                           <h3 class="subtitle brands__info-subtitle">payments:</h3>
+                           <div class="brands__info-text brands__info-text--regular">Visa, MasterCard, Coinspaid
+                              (Bitcoin, Litecoin,
+                              Bitcoin Cash, Etherum, Dogecoin, Tether), Neteller, Bank Transfer, iDebit, Instadebit,
+                              Interac, Skrill, Paysafe Card, EcoPayZ, WebMoney, Rapid Transfer by Skrill, NeoSurf,
+                              Astropay Direct, Astropay Card, PayVision, Inpay, Venus Point, MiFinity, MuchBetter,
+                              Play4Fun, Payretailers, Piastrix</div>
+                        </div>
+                     </div>
+                     <div class="brands__buttons">
+                        <button class="button brands__registration _registration">Start Promoting BRAND</button>
+                        <a class="button brands__affilate" href="affilate-kit.html">Affiliate kit</a>
+                        <a class="link brands__link" href="#">placeholderlink.com</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="brands__content brands__content--darker">
+               <div class="container">
+                  <div class="brands__content-body brands__content-body--reverse">
+                     <div class="brands__content-brand">
+                        <div class="brands__content-logo">
+                           <picture>
+                              <source media="(max-width: 768px)" srcset="img/content/brand1.svg" width="183"
+                                 height="53">
+                              <img src="img/content/brand1.svg" alt="brand1" width="221" height="64">
+                           </picture>
+                        </div>
+                        <a class="link brands__link brands__link--mobile" href="#">placeholderlink.com</a>
+                        <p class="brands__content-discription">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, similique suscipit, facere
+                           porro ea atque aut animi labore ex debitis voluptatem voluptate dolore voluptatibus
+                           repudiandae at reiciendis quibusdam facilis accusamus, vitae fugit alias!
+                        </p>
+                     </div>
+                     <div class="brands__image brands__image--reverse">
+                        <img src="img/content/mockup-2.png" alt="mockup" width="1014" height="604">
+                     </div>
+                     <div class="brands__spoiler">
+                        <div class="brands__markets">
+                           <h3 class="subtitle brands__markets-subtitle">Markets:</h3>
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--greece">Greece</div>
+                           <div class="brands__markets-country brands__markets-country--greece">Greece</div>
+                           <div class="brands__markets-country brands__markets-country--greece">Greece</div>
+                           <button class="brands__markets-show brands__markets-show--more">Show more</button>
+                        </div>
+                        <div class="brands__markets _spoilerContent _hidden">
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--italy">Italy</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--czech">Czech</div>
+                           <div class="brands__markets-country brands__markets-country--greece">Greece</div>
+                           <div class="brands__markets-country brands__markets-country--greece">Greece</div>
+                           <div class="brands__markets-country brands__markets-country--greece">Greece</div>
+                           <button class="brands__markets-show brands__markets-show--less">Show less</button>
+                        </div>
+                     </div>
+                     <div class="brands__info">
+                        <div class="brands__info-item">
+                           <h3 class="subtitle brands__info-subtitle">Commission:</h3>
+                           <div class="brands__info-text">Revshare up to 45%</div>
+                        </div>
+                        <div class="brands__info-item">
+                           <h3 class="subtitle brands__info-subtitle">License:</h3>
+                           <div class="brands__info-text">Malta (MGA)</div>
+                        </div>
+                        <div class="brands__info-item">
+                           <h3 class="subtitle brands__info-subtitle">est. date:</h3>
+                           <div class="brands__info-text">2022</div>
+                        </div>
+                        <div class="brands__info-item">
+                           <h3 class="subtitle brands__info-subtitle">languages:</h3>
+                           <div class="brands__info-text">EN, ESP, GE, RU</div>
+                        </div>
+                        <div class="brands__info-item">
+                           <h3 class="subtitle brands__info-subtitle">payments:</h3>
+                           <div class="brands__info-text brands__info-text--regular">Visa, MasterCard, Coinspaid
+                              (Bitcoin, Litecoin,
+                              Bitcoin Cash, Etherum, Dogecoin, Tether), Neteller, Bank Transfer, iDebit, Instadebit,
+                              Interac, Skrill, Paysafe Card, EcoPayZ, WebMoney, Rapid Transfer by Skrill, NeoSurf,
+                              Astropay Direct, Astropay Card, PayVision, Inpay, Venus Point, MiFinity, MuchBetter,
+                              Play4Fun, Payretailers, Piastrix</div>
+                        </div>
+                     </div>
+                     <div class="brands__buttons">
+                        <button class="button brands__registration _registration">Start Promoting BRAND</button>
+                        <a class="button brands__affilate" href="affilate-kit.html">Affiliate kit</a>
+                        <a class="link brands__link" href="#">placeholderlink.com</a>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </section>
+         <section class="reviews">
+            <div class="container">
+               <div class="reviews__body">
+                  <h2 class="title reviews__title">Reviews and testimonials</h2>
+                  <div class="slider reviews__slider" data-visible="3">
+                     <div class="slider__wrapper reviews__slider-wrapper">
+                        <div class="slider__track reviews__slider-track">
+                           <div class="slider__slide reviews__slider-slide">
+                              <div class="reviews__slider-logo">
+                                 <img src="img/content/brand5.svg" alt="brand5" width="127" height="39">
+                              </div>
+                              <p class="reviews__slider-text">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam reprehenderit incidunt
+                                 harum vero, distinctio voluptate sint porro tenetur obcaecati quod alias, inventore
+                                 adipisci autem nulla.
+                              </p>
+                              <a class="reviews__slider-link" href="#">www.link-to-site.com</a>
+                           </div>
+                           <div class="slider__slide reviews__slider-slide">
+                              <div class="reviews__slider-logo">
+                                 <img src="img/content/brand6.svg" alt="brand6" width="152" height="19">
+                              </div>
+                              <p class="reviews__slider-text">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur repudiandae
+                                 nihil ipsam ab molestias quia! Repellendus, quia error. Neque, fugiat facilis! Corporis
+                                 iste iusto in, soluta perspiciatis pariatur quis.
+                              </p>
+                              <a class="reviews__slider-link" href="#">placeholderlink.com</a>
+                           </div>
+                           <div class="slider__slide reviews__slider-slide">
+                              <div class="reviews__slider-logo">
+                                 <img src="img/content/brand7.svg" alt="brand7" width="138" height="30">
+                              </div>
+                              <p class="reviews__slider-text">
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, magni rerum. Non quas
+                                 provident alias minima quis vitae obcaecati sint nesciunt voluptates?
+                              </p>
+                              <a class="reviews__slider-link" href="#">www.link-to-site.com</a>
+                           </div>
+                           <div class="slider__slide reviews__slider-slide">
+                              <div class="reviews__slider-logo">
+                                 <img src="img/content/brand5.svg" alt="brand5" width="127" height="39">
+                              </div>
+                              <p class="reviews__slider-text">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam reprehenderit incidunt
+                                 harum vero, distinctio voluptate sint porro tenetur obcaecati quod alias, inventore
+                                 adipisci autem nulla.
+                              </p>
+                              <a class="reviews__slider-link" href="#">www.link-to-site.com</a>
+                           </div>
+                           <div class="slider__slide reviews__slider-slide">
+                              <div class="reviews__slider-logo">
+                                 <img src="img/content/brand6.svg" alt="brand6" width="152" height="19">
+                              </div>
+                              <p class="reviews__slider-text">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur repudiandae
+                                 nihil ipsam ab molestias quia! Repellendus, quia error. Neque, fugiat facilis! Corporis
+                                 iste iusto in, soluta perspiciatis pariatur quis.
+                              </p>
+                              <a class="reviews__slider-link" href="#">placeholderlink.com</a>
+                           </div>
+                           <div class="slider__slide reviews__slider-slide">
+                              <div class="reviews__slider-logo">
+                                 <img src="img/content/brand7.svg" alt="brand7" width="138" height="30">
+                              </div>
+                              <p class="reviews__slider-text">
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, magni rerum. Non quas
+                                 provident alias minima quis vitae obcaecati sint nesciunt voluptates?
+                              </p>
+                              <a class="reviews__slider-link" href="#">www.link-to-site.com</a>
+                           </div>
+                        </div>
+                     </div>
+                     <button
+                        class="slider__control slider__control--prev reviews__slider-control reviews__slider-control--prev"
+                        title="Previous"></button>
+                     <button
+                        class="slider__control slider__control--next reviews__slider-control reviews__slider-control--next"
+                        title="Next"></button>
+                  </div>
+                  <div class="faq reviews__faq">
+                     <div class="faq__left">
+                        <h2 class="title faq__title">FAQ</h2>
+                        <div class="faq__item">
+                           <h3 class="subtitle faq__subtitle">I'm new to all of this. What is an affiliate programme?
+                           </h3>
+                           <p class="faq__text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam adipisci laboriosam
+                              eligendi vero doloremque nemo optio laudantium. Accusamus vero, iusto numquam illum
+                              incidunt ut ipsum earum!
+                           </p>
+                        </div>
+                        <div class="faq__item">
+                           <h3 class="subtitle faq__subtitle">Can I promote your Brands on more than one website?</h3>
+                           <p class="faq__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, cumque
+                              illum! Eveniet culpa amet, architecto sint commodi at ab eum voluptates nobis excepturi
+                              tenetur, expedita minima velit fugiat, aspernatur explicabo cupiditate doloribus nam
+                              molestiae praesentium dolorem mollitia. Blanditiis necessitatibus minima in vitae,
+                              laudantium dicta quos ea odit. Tempore magnam amet repudiandae illum saepe eum vel!
+                              Blanditiis, inventore nostrum. Facere nihil libero, dicta reprehenderit excepturi eligendi
+                              sit illum assumenda aperiam at perferendis atque officia commodi cupiditate quasi quos
+                              consequuntur recusandae mollitia fuga facilis. Nam delectus cum pariatur doloremque
+                              distinctio ex sapiente natus. Cumque quam rerum quae deleniti unde sed sint facere nobis?
+                              Hic, a voluptate. Repudiandae modi reiciendis ea consequatur molestias nihil natus
+                              quibusdam, non unde ut deleniti nemo ex ratione blanditiis hic temporibus earum amet vitae
+                              perspiciatis facere impedit. Corporis consectetur ullam iste est tempore quod tempora
+                              quaerat. Possimus officia, totam nam exercitationem perspiciatis ut, accusamus sit
+                              voluptas pariatur culpa ipsum amet. Hic autem excepturi officia accusantium. Repudiandae
+                              alias, pariatur quaerat maiores voluptatibus, distinctio, natus harum nostrum commodi
+                              explicabo id placeat ipsam. Totam, quis possimus recusandae a necessitatibus quisquam nam
+                              pariatur, esse blanditiis voluptas suscipit atque cum, quibusdam vero eaque minima cumque
+                              fugit temporibus natus. Maxime rem atque voluptatem non.</p>
+                        </div>
+                        <div class="faq__item">
+                           <h3 class="subtitle faq__subtitle">How many referral links can I have?</h3>
+                           <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem,
+                              commodi, possimus laudantium eos facere libero iste ex dignissimos consequuntur, officia
+                              sit! Temporibus quos aspernatur incidunt perferendis. Magnam eos voluptas quo cumque
+                              dolorem molestiae natus.</p>
+                        </div>
+                        <div class="faq__item">
+                           <h3 class="subtitle faq__subtitle">How often do you update statistics?</h3>
+                           <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem,
+                              commodi, possimus laudantium eos facere libero iste ex dignissimos consequuntur, officia
+                              sit! Temporibus quos aspernatur incidunt perferendis. Magnam eos voluptas quo cumque
+                              dolorem molestiae natus.</p>
+                        </div>
+                        <div class="faq__item">
+                           <h3 class="subtitle faq__subtitle">Do you offer master/sub-affiliate commissions?</h3>
+                           <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem,
+                              commodi, possimus laudantium eos facere libero iste ex dignissimos consequuntur, officia
+                              sit! Temporibus quos aspernatur incidunt perferendis. Magnam eos voluptas quo cumque
+                              dolorem molestiae natus.</p>
+                        </div>
+                     </div>
+                     <div class="faq__right">
+                        <div class="faq__item">
+                           <h3 class="subtitle faq__subtitle">Which countries are restricted?</h3>
+                           <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut facilis
+                              consectetur quisquam. Ducimus, reprehenderit sint enim doloremque quibusdam ex nihil. Ad
+                              maxime eaque cupiditate ab rerum earum, exercitationem ipsum, nihil aut quisquam corrupti
+                              quod praesentium inventore nemo accusamus quidem tempore placeat a sed similique numquam
+                              eum consequuntur aspernatur. Deserunt voluptas dicta soluta ratione repellat dignissimos
+                              quidem aperiam pariatur sunt molestias non fugit iusto odit expedita error, animi sint
+                              quibusdam corrupti ipsam facilis consequatur ea! Omnis quia quasi quae ipsum, ut
+                              architecto sit, magnam impedit ad tempore adipisci iusto nam tenetur quam repudiandae,
+                              maiores dolore debitis doloremque. Ipsa ducimus, modi quia eligendi eum at tempore atque
+                              mollitia saepe numquam ea! Quam nulla mollitia aliquam necessitatibus culpa rerum,
+                              dolorem, voluptate obcaecati ea fuga, quas autem iure tempore sequi laboriosam quis eius
+                              nisi sunt? At, inventore. Accusantium dolorum beatae ullam repellat id minima quam
+                              consectetur. Numquam quaerat non impedit quasi, id assumenda in?</p>
+                        </div>
+                        <div class="faq__item">
+                           <h3 class="subtitle faq__subtitle">How often do you pay commission?</h3>
+                           <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem,
+                              commodi, possimus laudantium eos facere libero iste ex dignissimos consequuntur, officia
+                              sit! Temporibus quos aspernatur incidunt perferendis. Magnam eos voluptas quo cumque
+                              dolorem molestiae natus.</p>
+                        </div>
+                        <div class="faq__item">
+                           <h3 class="subtitle faq__subtitle">Can I negotiate exclusive partnership conditions?</h3>
+                           <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem,
+                              commodi, possimus laudantium eos facere libero iste ex dignissimos consequuntur, officia
+                              sit! Temporibus quos aspernatur incidunt perferendis. Magnam eos voluptas quo cumque
+                              dolorem molestiae natus.</p>
+                        </div>
+                        <div class="faq__item">
+                           <h3 class="subtitle faq__subtitle">What is the minimum payout?</h3>
+                           <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem,
+                              commodi, possimus laudantium eos facere libero iste ex dignissimos consequuntur, officia
+                              sit! Temporibus quos aspernatur incidunt perferendis. Magnam eos voluptas quo cumque
+                              dolorem molestiae natus.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <section class="contact" id="contact">
+            <div class="container">
+               <div class="contact__body">
+                  <div class="contact__text">
+                     <h2 class="title contact__title">Contact us</h2>
+                     <h3 class="subtitle contact__subtitle">Got questions? Perfect! We've got answers.</h3>
+                  </div>
+                  <div class="contact__content">
+                     <form class="contact__form">
+                        <input class="contact__form-input" type="text" placeholder="Your name" required>
+                        <input class="contact__form-input" type="email" placeholder="E-mail" required>
+                        <textarea class="contact__form-textarea" placeholder="Your message" required></textarea>
+                        <button class="button contact__form-submit" type="submit">send message</button>
+                     </form>
+                     <a class="logo contact__logo" href="index.html" title="На главную">
+                        <img src="img/content/footer-logo.png" alt="logo" width="238" height="66">
+                     </a>
+                     <div class="contact__links">
+                        <ul class="contact__social-list">
+                           <li class="contact__social-item contact__social-item--skype">
+                              <a class="contact__social-link" href="#">@place-holder</a>
+                           </li>
+                           <li class="contact__social-item contact__social-item--telegram">
+                              <a class="contact__social-link" href="#">@place-holder</a>
+                           </li>
+                           <li class="contact__social-item contact__social-item--email">
+                              <a class="contact__social-link"
+                                 href="mailto:mailbxo@lizard-affiliates.ru">mailbox@place-holder.ru</a>
+                           </li>
+                        </ul>
+                        <div class="contact__copyright">
+                           <a class="contact__terms" href="#">Affiliate Terms & Conditions</a>
+                           <p>Copyright 2023 Place holder. All rights reserved</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </footer>
+   </div>
+</body>
+
+</html>

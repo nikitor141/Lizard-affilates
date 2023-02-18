@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+   <link rel="manifest" href="site.webmanifest">
+   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#05373c">
+   <meta name="msapplication-config" content="browserconfig.xml">
+
+   <link rel="stylesheet" href="css/style.min.css">
+
+   <script defer src="js/main.min.js"></script>
+
+   <title>Lizard Affilate kit</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="popup ">
+         <div class="popup__body calc" tabindex="-1">
+            <h2 class="popup__title calc__title">I WANT TO EARN MONTHLY</h2>
+            <div class="calc__form">
+               <span class="calc__form-currency-sign">€</span>
+               <input type="text" class="calc__form-input">
+               <div class="calc__selector">
+                  <div class="calc__option calc__option--trigger active">EUR</div>
+                  <div class="calc__option calc__option--hidden active">BTC</div>
+                  <div class="calc__option calc__option--trigger">BTC</div>
+                  <div class="calc__option calc__option--hidden">EUR</div>
+               </div>
+            </div>
+            <div class="calc__info">
+               <div class="calc__required">
+                  <div class="calc__tooltip">
+                     Casino Profit Required
+                     <span>
+                        <span class="calc__tooltip-info">Casino Profit = (bets - wins - bonuses) - admin fee.</span>
+                     </span>
+                  </div>
+                  <div class="calc__result">25000 €</div>
+               </div>
+               <div class="calc__required">
+                  <div class="calc__tooltip">
+                     Commission Plan
+                     <span>
+                        <span class="calc__tooltip-info">
+                           <span>25% -&lt; 600€</span>
+                           <span>30% -600-1600€</span>
+                           <span>35% -1600-3000€</span>
+                           <span>40% -3000-5000€</span>
+                           <span>45% -5000-8000€</span>
+                           <span>50% -8000+€</span>
+                        </span>
+                     </span>
+                  </div>
+                  <div class="calc__result">25%</div>
+               </div>
+            </div>
+            <div class="calc__bottom">
+               <p class="calc__bottom-text">Registration takes just one minute!</p>
+               <button class="popup__button calc__button _registration">Start earning €10,000 monthly</button>
+               <ul class="calc__icons">
+                  <li class="calc__icon">
+                     <picture>
+                        <source srcset="img/content/popup-btc-logo.svg" type="image/svg+xml">
+                        <img src="img/content/popup-btc-logo.png" alt="Btc logo" width="61" height="13">
+                     </picture>
+                  </li>
+                  <li class="calc__icon">
+                     <picture>
+                        <source srcset="img/content/popup-skrill.svg" type="image/svg+xml">
+                        <img src="img/content/popup-skrill.png" alt="Skrill logo" width="62" height="20">
+                     </picture>
+                  </li>
+                  <li class="calc__icon">
+                     <picture>
+                        <source srcset="img/content/popup-neteller.svg" type="image/svg+xml">
+                        <img src="img/content/popup-neteller.png" alt="Neteller logo" width="61" height="11">
+                     </picture>
+                  </li>
+                  <li class="calc__icon">
+                     <picture>
+                        <source srcset="img/content/popup-bank.svg" type="image/svg+xml">
+                        <img src="img/content/popup-bank.png" alt="Bank logo" width="61" height="21">
+                     </picture>
+                  </li>
+               </ul>
+            </div>
+            <button class="popup__close"></button>
+         </div>
+         <div class="popup__body auth" tabindex="-1">
+
+            <div class="auth__tabs">
+               <h2 class="popup__title auth__tab _login-tab" role="button" tabindex="0">LOGIN</h2>
+               <h2 class="popup__title auth__tab _registration-tab" role="button" tabindex="0">REGISTRATION</h2>
+            </div>
+            <form class="auth__form login">
+
+               <h2 class="popup__title auth__title">LOGIN</h2>
+
+               <div class="auth__input-wrapper required">
+                  <input type="email" class="auth__input  auth__input--email" placeholder="E-MAIL" required>
+               </div>
+               <div class="auth__input-wrapper required">
+                  <input type="password" class="auth__input auth__input--password" placeholder="PASSWORD" required>
+                  <span class="auth__input-eye"></span>
+               </div>
+               <div class="auth__input-wrapper required">
+                  <input type="text" class="auth__input auth__input--auth-code" placeholder="AUTH-CODE" required>
+               </div>
+               <button type="submit" class="popup__button auth__button login__button">submit</button>
+               <div class="login__reset">Reset your password or register</div>
+            </form>
+            <form class="auth__form registration">
+
+               <h2 class="popup__title auth__title">REGISTRATION</h2>
+
+               <div class="auth__input-wrapper required">
+                  <input type="email" class="auth__input  auth__input--email" placeholder="E-MAIL" required>
+               </div>
+               <div class="auth__input-wrapper required">
+                  <input type="password" class="auth__input auth__input--password" placeholder="PASSWORD" required>
+                  <span class="auth__input-eye"></span>
+               </div>
+               <div class="auth__input-wrapper required">
+                  <input type="password" class="auth__input auth__input--password" placeholder="PASSWORD CONFIRMATION"
+                     required>
+                  <span class="auth__input-eye"></span>
+               </div>
+               <div class="auth__input-wrapper required">
+                  <input type="text" class="auth__input auth__input--name" placeholder="FULL NAME" required>
+               </div>
+               <div class="auth__input-wrapper required">
+                  <input type="text" class="auth__input auth__input--traffic" placeholder="TRAFFIC SOURCES" required>
+               </div>
+               <div class="auth__input-wrapper">
+                  <input type="text" class="auth__input auth__input--company" placeholder="COMPANY">
+               </div>
+               <div class="auth__input-wrapper">
+                  <input type="text" class="auth__input auth__input--tel" placeholder="PHONE">
+               </div>
+               <div class="auth__input-wrapper">
+                  <input type="text" class="auth__input auth__input--skype" placeholder="SKYPE">
+               </div>
+               <div class="auth__input-wrapper">
+                  <input type="text" class="auth__input auth__input--telegram" placeholder="TELEGRAM">
+               </div>
+               <div class="registration__checkboxes">
+                  <div class="registration__checkboxes-item required">
+                     <input class="registration__checkbox-input" type="checkbox" id="accept" required>
+                     <label class="registration__checkbox" for="accept" tabindex="0"></label>
+                     <p class="registration__checkboxes-item-text">
+                        I accept site affiliate<br>
+                        <a href="#">Terms & Conditions</a>
+                     </p>
+                  </div>
+                  <div class="registration__checkboxes-item">
+                     <input class="registration__checkbox-input" type="checkbox" id="subscribe" checked>
+                     <label class="registration__checkbox" for="subscribe" tabindex="0"></label>
+                     <p class="registration__checkboxes-item-text">
+                        Subscribe to our newsletter
+                     </p>
+                  </div>
+               </div>
+               <button type="submit" class="popup__button auth__button registration__button">submit</button>
+            </form>
+            <button class="popup__close"></button>
+         </div>
+      </div>
+      <header class="header">
+         <div class="container">
+            <div class="header__body">
+               <a class="logo header__logo" href="index.html" title="На главную">
+                  <picture>
+                     <source srcset="img/content/logo-mobile.png" type="image/png" media="(max-width:768px)" width="143"
+                        height="35">
+                     <img src="img/content/logo.png" alt="logo" width="238" height="95">
+                  </picture>
+               </a>
+               <nav class="header__menu">
+                  <button class="burger" aria-label="Burger button.">
+                     <span></span>
+                  </button>
+                  <ul class="header__menu-list">
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="index.html#plan">Comissions</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="index.html#politics">About us</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="index.html#brands">Affiliate kit</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="index.html#contact">Contacts</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <button class="button header__login header__login--adaptive _login">LOGIN</button>
+                     </li>
+                     <li class="header__menu-item">
+                        <button class="button header__registration header__registration--adaptive _registration">GET
+                           STARTED</button>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="header__language-wrapper">
+                  <select class="header__language">
+                     <option value="en">EN</option>
+                     <option value="ru">RU</option>
+                  </select>
+               </div>
+               <button class="button header__login _login">LOGIN</button>
+               <button class="button header__registration _registration">GET STARTED</button>
+            </div>
+         </div>
+      </header>
+      <main class="content">
+         <section class="resources">
+            <div class="container container--970">
+               <div class="resources__body">
+                  <div class="resources__logo">
+                     <img src="img/content/brand1.svg" alt="brand1" width="169" height="49">
+                  </div>
+                  <h2 class="title resources__title">Affiliates Media Resources</h2>
+                  <p class="subtitle resources__subtitle">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nulla quae aspernatur mollitia
+                     quos at adipisci! Impedit, corrupti voluptates. Explicabo nesciunt, ipsam quibusdam beatae vero
+                     ducimus nisi reprehenderit magni architecto!
+                  </p>
+               </div>
+            </div>
+         </section>
+         <section class="about">
+            <div class="container">
+               <div class="about__body">
+                  <div class="about__top">
+                     <h2 class="title about__title">About Casino</h2>
+                     <div class="about__links">
+                        <a class="link about__link" href="#">placeholderlink.com</a>
+                        <span class="about__links-logo"></span>
+                     </div>
+                  </div>
+                  <p class="about__discription">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem atque quia deserunt debitis mollitia
+                     inventore alias laboriosam. Rem corrupti, distinctio dicta blanditiis, alias, molestias libero
+                     placeat consequatur nam esse laudantium nobis sunt quam nemo id voluptas. Praesentium dicta natus
+                     dignissimos aliquam, nesciunt voluptatum expedita in ipsam quas aspernatur sapiente rem possimus
+                     quo laborum distinctio ad optio, modi voluptate corrupti quidem quasi. Pariatur, voluptates rerum
+                     ducimus distinctio fugit in fugiat consequuntur fuga minima neque dolorum maiores repellendus,
+                     dolore, iusto sunt nesciunt?
+                  </p>
+               </div>
+            </div>
+         </section>
+         <section class="betting">
+            <div class="container">
+               <div class="betting__body">
+                  <h2 class="title betting__title">Special offer</h2>
+                  <div class="betting__item betting__item--bonus">
+                     <h3 class="subtitle betting__subtitle">Welcome bonus:</h3>
+                     <p class="betting__discription">
+                        Up to €300 on your first deposits + 100 Free Spins
+                     </p>
+                  </div>
+                  <div class="betting__item betting__item--languages">
+                     <h3 class="subtitle betting__subtitle">Languages:</h3>
+                     <p class="betting__discription">
+                        English, German, Japanese, Russian, French
+                     </p>
+                  </div>
+                  <div class="betting__item betting__item--currencies">
+                     <h3 class="subtitle betting__subtitle">Currencies:</h3>
+                     <p class="betting__discription">
+                        USD, EUR, CAD, NOK, NZD, RUB, AUD, JPY, ETH, BTC, BCT, LTC, DOG
+                     </p>
+                  </div>
+                  <div class="betting__item betting__item--games">
+                     <h3 class="subtitle betting__subtitle">Games:</h3>
+                     <p class="betting__discription">
+                        More than 4900 games: Slots, Jackpot games, Drop and wins, Card
+                        games, Roulette, Video Poker
+                     </p>
+                  </div>
+                  <div class="betting__item betting__item--dealers">
+                     <h3 class="subtitle betting__subtitle">Live dealers games:</h3>
+                     <p class="betting__discription">
+                        Live Blackjack, Live Roulette, Live Baccarat, Live Dice Duel
+                     </p>
+                  </div>
+                  <div class="betting__item betting__item--support">
+                     <h3 class="subtitle betting__subtitle">Support:</h3>
+                     <p class="betting__discription">
+                        We're always ready to help - 24/7
+                        Live chat, Email: support@placeholder.com
+                     </p>
+                  </div>
+                  <div class="betting__item betting__item--deposit">
+                     <h3 class="subtitle betting__subtitle">Deposit methods:</h3>
+                     <p class="betting__discription">
+                        Minimim: €10
+                     </p>
+                     <p class="betting__discription">
+                        Visa, MasterCard, Maestro, JCB, Astropay, Interac, Paysafecard,
+                        NeoSurf, CoinsPaid: Bitcoin, Bitcoin, Cash Ethereum, Litecoin, Dogecoin, Instadebit, Neteller,
+                        Ecopayz, Online Bank Transfer: Skrill, Skrill Rapid, Qiwi, iDebit, SticPay, VenusPoint,
+                        CashToCode, SiruMobile, UPayCard, Instadebit, Neteller, WebMoney, Yandex money
+                     </p>
+                  </div>
+                  <div class="betting__item betting__item--withdrawal-methods">
+                     <h3 class="subtitle betting__subtitle">Withdrawal Methods:</h3>
+                     <p class="betting__discription">
+                        Minimum: €10
+                     </p>
+                     <p class="betting__discription">
+                        Visa, MasterCard, Maestro, JCB, Interac, Online Bank Transfer:
+                        Skrill, Skrill Rapid, Neteller, iDebit, Astropay, Ecopayz, Qiwi, Yandex money, WebMoney,
+                        Paysafecard, CoinsPaid: Bitcoin, Bitcoin, Cash Ethereum, Litecoin Dogecoin, Inpay, Bank
+                        transfer, SticPay, VenusPoint, UPayCard, Instadebit
+                     </p>
+                  </div>
+                  <div class="betting__item betting__item--providers">
+                     <h3 class="subtitle betting__subtitle">Game providers:</h3>
+                     <p class="betting__discription">
+                        Amatic, Booming, BSG, EGT,ELK, Epic Media, Evolution, Groove
+                        Gaming, IgTech, Infinigame, IsoftBet, Netent, Nolimit City, Platipus, Play'n GO, Playtech,
+                        Pragmatic, Quickfire, Quickspin, Red Tiger Gaming, Relax, Softswiss, Spinomenal, Thunder Kick,
+                        Wazdan, Yggdrasil, Felix gaming, Truelab
+                     </p>
+                  </div>
+                  <div class="betting__item betting__item--limits">
+                     <h3 class="subtitle betting__subtitle">Withdrawal Times & Limits:</h3>
+                     <p class="betting__discription">
+                        The maximum withdrawal amount processed to a player is 2,000 €/$ per day, 7,500 €/$ per week and
+                        15,000 €/$ per month. Exceptions may be made to players with a higher VIP level, if any, at the
+                        Casino's sole discretion
+                     </p>
+                     <p class="betting__discription">
+                        EWallets: Up to 1 hour
+                        Credit/Debit Cards: Up to 1 hour
+                        Bank Transfers: Up to 8 hours
+                        Pending Time: 1 day
+                     </p>
+                  </div>
+                  <div class="betting__item betting__item--restricted">
+                     <h3 class="subtitle betting__subtitle">Restricted countries: </h3>
+                     <p class="betting__discription">
+                        United States of America, United Kingdom, Spain, Slovakia, France
+                        and its overseas territories (Guadeloupe, Martinique, French Guiana, Réunion, Mayotte, St.
+                        Martin, French Polynesia, Wallis and Futuna, New Caledonia), Lithuania, Netherlands, Israel,
+                        Ukraine, St. Maarten, St. Eustatius, Saba, Dutch West Indies and Curacao, Aruba, Bonaire, Turkey
+                     </p>
+                  </div>
+                  <div class="betting__item betting__item--affilate">
+                     <h3 class="subtitle betting__subtitle">Affiliate Program:</h3>
+                     <p class="betting__discription">
+                        Place holder Affiliate Club
+                        affiliates@placeholder.com
+                     </p>
+                  </div>
+                  <a class="button betting__download" href="#">DOWNLOAD .DOCX</a>
+               </div>
+            </div>
+         </section>
+         <section class="logotypes">
+            <div class="container">
+               <div class="logotypes__body">
+                  <h2 class="title logotypes__title">Logotypes</h2>
+                  <div class="logotypes__items">
+                     <div class="logotypes__item logotypes__item--blue">
+                        <div class="logotypes__item-top">
+                           <h3 class="subtitle logotypes__subtitle">Recommended</h3>
+                           <a class="download download--hover" href="img/content/brand1.svg" download>DOWNLOAD</a>
+                        </div>
+                        <div class="logotypes__logo">
+                           <img src="img/content/brand1.svg" alt="brand1" width="273" height="79">
+                        </div>
+                     </div>
+                     <div class="logotypes__item logotypes__item--light-blue">
+                        <div class="logotypes__item-top">
+                           <h3 class="subtitle logotypes__subtitle">Additional</h3>
+                           <a class="download download--hover" href="img/content/brand1.svg" download>DOWNLOAD</a>
+                        </div>
+                        <div class="logotypes__logo">
+                           <img src="img/content/brand1.svg" alt="brand1" width="273" height="79">
+                        </div>
+                     </div>
+                     <div class="logotypes__item logotypes__item--black">
+                        <div class="logotypes__item-top">
+                           <h3 class="subtitle logotypes__subtitle">Additional</h3>
+                           <a class="download download--hover" href="img/content/brand1.svg" download>DOWNLOAD</a>
+                        </div>
+                        <div class="logotypes__logo">
+                           <img src="img/content/brand1.svg" alt="brand1" width="273" height="79">
+                        </div>
+                     </div>
+                     <div class="logotypes__item-pack">
+                        <h3 class="subtitle logotypes__pack-subtitle">LOGO SHOULD APPEARS ONLY IN THIS COLORS</h3>
+                        <div class="logotypes__item-pack-colors">
+                           <div class="logotypes__item-pack-color logotypes__item-pack-color--white">#FFFFF</div>
+                           <div class="logotypes__item-pack-color logotypes__item-pack-color--lime">#8CC63E</div>
+                           <div class="logotypes__item-pack-color logotypes__item-pack-color--black">#000000</div>
+                        </div>
+                        <a class="download logotypes__item-pack-download" href="#">DOWNLOAD FULL LOGO PACK</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="banners">
+            <div class="container">
+               <div class="banners__body">
+                  <div class="banners__top">
+                     <h2 class="title banners__title">Promo banners</h2>
+                     <a class="download banners__bownload" href="#" download="">DOWNLOAD BANNERS PACK</a>
+                  </div>
+
+                  <div class="slider banners__slider" data-visible="1">
+                     <div class="slider__wrapper banners__slider-wrapper">
+                        <div class="slider__track banners__slider-track">
+
+                           <div class="slider__slide banners__slider-slide">
+                              <div class="banners__slider-baner">
+                                 <img src="img/content/banner.jpg" alt="Promo banner" width="1171" height="334">
+                              </div>
+                           </div>
+                           <div class="slider__slide banners__slider-slide">
+                              <div class="banners__slider-baner">
+                                 <img src="img/content/banner.jpg" alt="Promo banner" width="1171" height="334">
+                              </div>
+                           </div>
+                           <div class="slider__slide banners__slider-slide">
+                              <div class="banners__slider-baner">
+                                 <img src="img/content/banner.jpg" alt="Promo banner" width="1171" height="334">
+                              </div>
+                           </div>
+                           <div class="slider__slide banners__slider-slide">
+                              <div class="banners__slider-baner">
+                                 <img src="img/content/banner.jpg" alt="Promo banner" width="1171" height="334">
+                              </div>
+                           </div>
+                           <div class="slider__slide banners__slider-slide">
+                              <div class="banners__slider-baner">
+                                 <img src="img/content/banner.jpg" alt="Promo banner" width="1171" height="334">
+                              </div>
+                           </div>
+                           <div class="slider__slide banners__slider-slide">
+                              <div class="banners__slider-baner">
+                                 <img src="img/content/banner.jpg" alt="Promo banner" width="1171" height="334">
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <button
+                        class="slider__control slider__control--prev banners__slider-control banners__slider-control--prev"
+                        title="Previous"></button>
+                     <button
+                        class="slider__control slider__control--next banners__slider-control banners__slider-control--next"
+                        title="Next"></button>
+                     <div class="slider__dots banners__slider-dots"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="screenshots">
+            <div class="container">
+               <div class="screenshots__body">
+
+                  <h2 class="title screenshots__title">Casino brand screenshots</h2>
+                  <a class="download screenshots__download" href="#" download="">DOWNLOAD SCREENS PACK</a>
+
+
+
+                  <div class="screenshots__screenshot">
+                     <img src="img/content/screenshot_1.jpg" alt="Casino brand screenshot" width="370" height="278">
+                  </div>
+                  <div class="screenshots__screenshot">
+                     <img src="img/content/screenshot_2.jpg" alt="Casino brand screenshot" width="370" height="278">
+                  </div>
+                  <div class="screenshots__screenshot">
+                     <img src="img/content/screenshot_3.jpg" alt="Casino brand screenshot" width="370" height="278">
+                  </div>
+                  <div class="screenshots__screenshot">
+                     <img src="img/content/screenshot_4.jpg" alt="Casino brand screenshot" width="370" height="278">
+                  </div>
+                  <div class="screenshots__screenshot">
+                     <img src="img/content/screenshot_5.jpg" alt="Casino brand screenshot" width="370" height="278">
+                  </div>
+                  <div class="screenshots__screenshot">
+                     <img src="img/content/screenshot_6.jpg" alt="Casino brand screenshot" width="370" height="278">
+                  </div>
+                  <div class="screenshots__screenshot">
+                     <img src="img/content/screenshot_7.jpg" alt="Casino brand screenshot" width="370" height="278">
+                  </div>
+                  <div class="screenshots__screenshot">
+                     <img src="img/content/screenshot_8.jpg" alt="Casino brand screenshot" width="370" height="278">
+                  </div>
+                  <div class="screenshots__screenshot">
+                     <img src="img/content/screenshot_9.jpg" alt="Casino brand screenshot" width="370" height="278">
+                  </div>
+
+
+                  <button class="button screenshots__registration _registration">Start Promoting BRAND</button>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <section class="contact" id="contact">
+            <div class="container">
+               <div class="contact__body">
+                  <div class="contact__text">
+                     <h2 class="title contact__title">Contact us</h2>
+                     <h3 class="subtitle contact__subtitle">Got questions? Perfect! We've got answers.</h3>
+                  </div>
+                  <div class="contact__content">
+                     <form class="contact__form">
+                        <input class="contact__form-input" type="text" placeholder="Your name" required>
+                        <input class="contact__form-input" type="email" placeholder="E-mail" required>
+                        <textarea class="contact__form-textarea" placeholder="Your message" required></textarea>
+                        <button class="button contact__form-submit" type="submit">send message</button>
+                     </form>
+                     <a class="logo contact__logo" href="index.html" title="На главную">
+                        <img src="img/content/footer-logo.png" alt="logo" width="238" height="66">
+                     </a>
+                     <div class="contact__links">
+                        <ul class="contact__social-list">
+                           <li class="contact__social-item contact__social-item--skype">
+                              <a class="contact__social-link" href="#">@place-holder</a>
+                           </li>
+                           <li class="contact__social-item contact__social-item--telegram">
+                              <a class="contact__social-link" href="#">@place-holder</a>
+                           </li>
+                           <li class="contact__social-item contact__social-item--email">
+                              <a class="contact__social-link"
+                                 href="mailto:mailbxo@lizard-affiliates.ru">mailbox@place-holder.ru</a>
+                           </li>
+                        </ul>
+                        <div class="contact__copyright">
+                           <a class="contact__terms" href="#">Affiliate Terms & Conditions</a>
+                           <p>Copyright 2023 Place holder. All rights reserved</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </footer>
+   </div>
+</body>
+
+</html>
