@@ -2,13 +2,10 @@
 
 
 document.querySelectorAll('main .container > * > *').forEach(item => {
-
-   if (item.parentElement.classList.contains('offer__body') || item.parentElement.classList.contains('politics__body') || item.parentElement.classList.contains('logotypes__body') || item.parentElement.classList.contains('screenshots__body') || item.parentElement.classList.contains('banners__body')) {
-      if (!item.classList.contains('slider')) {
-         item.querySelectorAll('*').forEach(item => item.dataset.aos = 'zoom-in-up');
-      }
-   }
-   else if (!item.classList.contains('plan__background') && !item.classList.contains('brands__image')) item.dataset.aos = 'zoom-in-up';
+   const parent = item.parentElement.classList;
+   if (parent.contains('offer__body') || parent.contains('politics__body') || parent.contains('logotypes__body') || parent.contains('screenshots__body') || parent.contains('banners__body')) {
+      if (!item.classList.contains('slider')) item.querySelectorAll('*').forEach(item => item.dataset.aos = 'zoom-in-up');
+   } else if (!item.matches('.plan__background, .brands__image')) item.dataset.aos = 'zoom-in-up';
 });
 
 AOS.init({
